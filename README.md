@@ -216,6 +216,7 @@ Complete each task using the **feature branch workflow**. This mirrors real-worl
 **Branch: `feature/get-single-entry`**
 
 1. **Create your feature branch**:
+
    ```bash
    git checkout main
    git pull origin main
@@ -230,6 +231,7 @@ Complete each task using the **feature branch workflow**. This mirrors real-worl
    - Try valid and invalid entry IDs
 
 4. **Commit and push**:
+
    ```bash
    git add .
    git commit -m "feat: implement GET /entries/{id} endpoint
@@ -243,7 +245,7 @@ Complete each task using the **feature branch workflow**. This mirrors real-worl
 
 5. **Create a Pull Request**:
    - Go to your GitHub repository
-   - Click "Compare & pull request" 
+   - Click "Compare & pull request"
    - Use this PR template:
 
    ```markdown
@@ -264,6 +266,7 @@ Complete each task using the **feature branch workflow**. This mirrors real-worl
 **Branch: `feature/delete-entry`**
 
 1. **Create your feature branch**:
+
    ```bash
    git checkout main
    git pull origin main  # Get any merged changes
@@ -312,13 +315,15 @@ Complete each task using the **feature branch workflow**. This mirrors real-worl
 ### Creating Quality PRs
 
 **PR Title Format:**
-```
+
+```txt
 feat: implement GET /entries/{id} endpoint
 fix: resolve database connection timeout
 docs: update API documentation
 ```
 
 **PR Description Template:**
+
 ```markdown
 ## 📝 Description
 Brief description of what this PR accomplishes.
@@ -354,9 +359,6 @@ Before merging your PR, do a thorough **self-review**:
 3. **Read your code** - Is it clear and well-commented?
 4. **Run the app** - Does everything still work?
 5. **Consider edge cases** - What could go wrong?
-
-**Optional: Share in Discord**
-Feel free to share your PR in the **Learn to Cloud Discord #phase-2** channel if you'd like additional feedback from the community!
 
 ### Merging Your PR
 
@@ -444,21 +446,18 @@ By the end of this project, you should have:
 This project teaches you:
 
 ### Technical Skills
+
 - **FastAPI development** - Building REST APIs
 - **PostgreSQL integration** - Database operations
 - **Docker containers** - Development environment
 - **API testing** - Using interactive documentation
 
 ### Professional Skills
+
 - **Git workflows** - Feature branches and PRs
 - **Code review** - Self-review with optional community feedback
 - **Project organization** - Clean, maintainable code structure
 - **Documentation** - Clear commit messages and PR descriptions
-
-### Cloud Readiness
-- **Containerization** - App ready for cloud deployment
-- **Environment configuration** - Proper secret management
-- **CLI tools** - Ready for cloud provider interaction
 
 ## 🔧 Troubleshooting
 
