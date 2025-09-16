@@ -56,17 +56,24 @@ async def get_all_entries(entry_service: EntryService = Depends(get_entry_servic
 
 @router.get("/entries/{entry_id}")
 async def get_entry(request: Request, entry_id: str, entry_service: EntryService = Depends(get_entry_service)):
-    """
-    TODO: Implement this endpoint to return a single journal entry by ID
+    try:    
+        """
+        TODO: Implement this endpoint to return a single journal entry by ID
+        """
+        # Steps to implement:
+        # 1. Use the entry_service to get the entry by ID
+        entity = await entry_service.get_entry(entry_id)
+
+        # 2. Return 404 if entry not found
+        if not entity:
+            raise HTTPException(status_code=404, detail= "The entry you requested, Not found")
+        # 3. Return the entry as JSON if found
+        return entity
     
-    Steps to implement:
-    1. Use the entry_service to get the entry by ID
-    2. Return 404 if entry not found
-    3. Return the entry as JSON if found
-    
-    Hint: Check the update_entry endpoint for similar patterns
-    """
-    raise HTTPException(status_code=501, detail="Not implemented - complete this endpoint!")
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=501, detail="Not implemented - complete this endpoint!")
 
 @router.patch("/entries/{entry_id}")
 async def update_entry(request: Request, entry_id: str, entry_update: dict):
