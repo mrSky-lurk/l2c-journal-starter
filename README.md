@@ -97,8 +97,8 @@ Complete a Journal API that allows users to:
 
 - ✅ **Store journal entries** (already implemented)
 - ✅ **Retrieve all journal entries** (already implemented)
-- ❌ **Retrieve single journal entry** (you need to implement)  
-- ❌ **Delete specific journal entries** (you need to implement)
+- ✅ **Retrieve single journal entry** (you need to implement)  - **Implemented**
+- ✅ **Delete specific journal entries** (you need to implement) - **Implemented**
 - ✅ **Update journal entries** (already implemented)
 - ✅ **Delete all entries** (already implemented)
 - ❌ **Setup logging** (you need to implement)
