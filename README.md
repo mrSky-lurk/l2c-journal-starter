@@ -101,7 +101,7 @@ Complete a Journal API that allows users to:
 - ✅ **Delete specific journal entries** (you need to implement) - **Implemented**
 - ✅ **Update journal entries** (already implemented)
 - ✅ **Delete all entries** (already implemented)
-- ❌ **Setup logging** (you need to implement)
+- ✅ **Setup logging** (you need to implement)  - **Implemented**
 
 ## 🎯 Development Tasks (Your Work!)
 
